@@ -333,7 +333,9 @@ You have 1000 rows. You create 5 random samples (each with 1000 rows, picked wit
 Boosting trains models **one after another**, and each new model tries to fix the mistakes of the previous model.
 
 **Interview Explanation:**
-"Boosting is a sequential ensemble technique. Unlike bagging, models are not trained independently — each new model focuses more on the data points that previous models got wrong. The final prediction is a weighted combination of all models. Boosting usually gives higher accuracy than bagging but can overfit if not controlled. Examples: AdaBoost, Gradient Boosting, XGBoost."
+Boosting is a sequential ensemble technique. Unlike bagging, models are not trained independently — each new model focuses more on the data points that previous models got wrong. The final prediction is a weighted combination of all models. Boosting usually gives higher accuracy than bagging but can overfit if not controlled. Examples: AdaBoost, Gradient Boosting, XGBoost.<br>
+
+*Boosting take Notes of what was the wrong prediction and next model knows the mistakes*
 
 **Formula (General Boosting idea):**
 ```
